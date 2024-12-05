@@ -35,6 +35,9 @@
 <!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="form.css">
+
 <!-- Bootstrap 5 JavaScript Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -44,84 +47,6 @@
     messageDiv.classList.remove('d-none'); // Show the message by removing the `d-none` class
   });
 </script>
-
-
-  <style>
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .one{
-        background: #444444;
-        min-height: 400px;
-
-        .row.py-lg-5{
-          margin-left: 10px;
-          margin-right: 10px;
-        }
-    }
-
-    .img-bg-01 {
-        background-image: url('img/201.png'); /* Replace with your image URL */
-        background-size: center; /* Ensures the image covers the entire section */
-        background-position: center; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents tiling */
-        color: rgb(255, 255, 255); /* Adjusts text color for better contrast */
-    }
-
-    .lead.text-muted{
-        color: rgb(255, 255, 255) !important; /* Adjusts text color for better contrast */
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .two.lead.text-muted{
-        color: #444444 !important; /* Adjusts text color for better contrast */
-    }
-
-    .card{
-        border-radius: 10px !important;
-    }
-
-    .card-img-top{
-        border-radius: 10px 10px 1px 1px !important;
-    }
-
-    .two{
-        margin-top: -50px;
-    }
-
-    #contact{
-      margin-top: -20px;
-      margin-bottom: -80px;
-    }
-
-    .nav-container.text-muted{
-      color: #444444 !important;
-    }
-
-    .list-unstyled a{
-      text-decoration: none !important;
-    }
-
-    #customMessage{
-      margin-bottom: 0;
-    }
-
-  </style>
-
 
 </head>
 
@@ -456,20 +381,90 @@
           </p>
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
-              Please find bellow our contact informations:<br>
+              Please find below our contact information:<br>
               <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
               <p>Phone: <a href="tel:+2310000000">+2310 00 00 00</a></p>
               <p><strong>Company name</strong><br>Address: xxx1, 55555, <br>Thessaloniki, Greece</p>
-              <p>Working hours:<br><strong>Monday to Friday 9:00 to 16:00 (gmt+1)</strong></p>
+              <p>Working hours:<br><strong>Monday to Friday 9:00 to 16:00 (GMT+1)</strong></p>
+
+              <!-- Start of the contact form and script -->
+              <h2>Contact Form</h2>
+              <div id="form" class="contact-container">
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Your Last Name" required>
+
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="Your Company">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="phone" id="phone" name="phone" placeholder="Your Phone">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <div id="status" class="message"></div>
+                </form>
+              </div>
+
+              <script>
+                  document.getElementById('contactForm').addEventListener('submit', async function (e) {
+                      e.preventDefault(); // Prevent form from reloading the page
+                      const form = e.target;
+
+                      const formData = {
+                          name: form.name.value,
+                          lastname: form.lastname.value,
+                          company: form.company.value,
+                          email: form.email.value,
+                          phone: form.phone.value,
+                          message: form.message.value,
+                      };
+
+                      const statusDiv = document.getElementById('status');
+                      statusDiv.textContent = "Sending...";
+
+                      try {
+                          const response = await fetch('https://script.google.com/macros/s/AKfycbw4D58ShEZtuGtbdKScT6DvOBGS0wFFPBMM63CuSjLbOCz_MOxzxVn6IIZjEhfFVOXS/exec', {
+                              method: 'POST',
+                              body: JSON.stringify(formData),
+                          });
+
+                          if (response.ok) {
+                              statusDiv.textContent = "Your message has been sent successfully!";
+                              statusDiv.style.color = "green";
+                              form.reset(); // Clear the form
+                          } else {
+                              statusDiv.textContent = "Failed to send your message. Please try again.";
+                              statusDiv.style.color = "red";
+                          }
+                      } catch (error) {
+                          console.error('Error:', error);
+                          statusDiv.textContent = "An error occurred. Please try again.";
+                          statusDiv.style.color = "red";
+                      }
+                  });
+              </script>
+              <!-- END of the contact form and script -->
+               <p></p>
               <p class="mb-0"><a href="contact.html">Contact guide</a></p>
             </div>
           </div>
       </div>
   </div>
 </section>
-</div><!-- END of main container -->
+<!-- END of main container -->
+
 </div>
-<!-- END of contact space -->
+</div>
+<!-- END of main container -->
   </main>
 
   <footer class="text-muted py-5">
