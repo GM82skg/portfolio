@@ -1,81 +1,80 @@
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.one{
+    background: #444444;
+    min-height: 400px;
+    .row.py-lg-5{
+      margin-left: 10px;
+      margin-right: 10px;
     }
-  }
+}
 
-  .one{
-      background: #444444;
-      min-height: 400px;
+.img-bg-01 {
+    background-image: url('img/201.png'); /* Replace with your image URL */
+    background-size: center; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: rgb(255, 255, 255); /* Adjusts text color for better contrast */
+}
 
-      .row.py-lg-5{
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-  }
+.lead.text-muted{
+    color: rgb(255, 255, 255) !important; /* Adjusts text color for better contrast */
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-  .img-bg-01 {
-      background-image: url('img/201.png'); /* Replace with your image URL */
-      background-size: center; /* Ensures the image covers the entire section */
-      background-position: center; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents tiling */
-      color: rgb(255, 255, 255); /* Adjusts text color for better contrast */
-  }
+.two.lead.text-muted{
+    color: #444444 !important; /* Adjusts text color for better contrast */
+}
 
-  .lead.text-muted{
-      color: rgb(255, 255, 255) !important; /* Adjusts text color for better contrast */
-      margin-left: 20px;
-      margin-right: 20px;
-  }
+.card{
+    border-radius: 10px !important;
+}
 
-  .two.lead.text-muted{
-      color: #444444 !important; /* Adjusts text color for better contrast */
-  }
+.card-img-top{
+    border-radius: 10px 10px 1px 1px !important;
+}
 
-  .card{
-      border-radius: 10px !important;
-  }
+.two{
+    margin-top: -50px;
+}
 
-  .card-img-top{
-      border-radius: 10px 10px 1px 1px !important;
-  }
+#contact{
+  margin-top: -60px;
+  margin-bottom: -90px;
+}
 
-  .two{
-      margin-top: -50px;
-  }
+.nav-container.text-muted{
+  color: #444444 !important;
+}
 
-  #contact{
-    margin-top: -60px;
-    margin-bottom: -90px;
-  }
+.list-unstyled a{
+  text-decoration: none !important;
+}
 
-  .nav-container.text-muted{
-    color: #444444 !important;
-  }
+#customMessage{
+  margin-bottom: 0;
+}
 
-  .list-unstyled a{
-    text-decoration: none !important;
-  }
-
-  #customMessage{
-    margin-bottom: 0;
-  }
-
-  .contact-container {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: auto; /* Allow form to center within the space */
-    margin: 0 auto; /* Ensure proper centering if the parent container has a set width */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: auto; /* Allow form to center within the space */
+  margin: 0 auto; /* Ensure proper centering if the parent container has a set width */
 }
 
 .contact-container form {
