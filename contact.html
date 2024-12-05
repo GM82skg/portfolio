@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="We’d love to hear from you! Whether you have a project in mind, need advice, or want to collaborate, our team is here to help. Contact us, from Monday to Friday, 9:00 AM – 4:00 PM (GMT+1).">
   <meta name="author" content="George Makridis">
-  <!--<meta name="generator" content="Hugo 0.72.0">-->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const currentYear = new Date().getFullYear();
-        document.title = `GM82 Portfolio ${currentYear}`;
+        const storedTitle = localStorage.getItem("documentTitle");
+        if (storedTitle) {
+            document.title = storedTitle;
+        } else {
+            document.title = "Default Title"; // Fallback title
+        }
     });
   </script>
   <title>Portfolio</title>
