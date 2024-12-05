@@ -83,3 +83,7 @@
     width: 100%; /* Ensure it takes up full width within max-width */
     text-align: left;
 }
+
+#services h1{
+  text-align: left;
+}
