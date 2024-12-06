@@ -85,6 +85,11 @@
   text-align: left;
 }
 
+.separator {
+  border-top: 1px solid #000;
+  margin: 10px 0;
+}
+
 .project {
   background: white;
   padding: 20px;
