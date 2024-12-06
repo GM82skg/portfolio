@@ -193,7 +193,7 @@ gtag('config', 'G-XXXXXXX');
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro1">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary shareBtn" data-id="pro1">Share</button>
                   </div>
                   <small class="text-muted">2024</small>
@@ -226,7 +226,7 @@ gtag('config', 'G-XXXXXXX');
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro2">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary shareBtn" data-id="pro2">Share</button>
                   </div>
                   <small class="text-muted">2024</small>
@@ -259,7 +259,7 @@ gtag('config', 'G-XXXXXXX');
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro3">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary shareBtn" data-id="pro3">Share</button>
                   </div>
                   <small class="text-muted">2024</small>
@@ -292,7 +292,7 @@ gtag('config', 'G-XXXXXXX');
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro4">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary shareBtn" data-id="pro4">Share</button>
                   </div>
                   <small class="text-muted">2024</small>
@@ -325,7 +325,7 @@ gtag('config', 'G-XXXXXXX');
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro5">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary shareBtn" data-id="pro5">Share</button>
                   </div>
                   <small class="text-muted">2024</small>
@@ -358,7 +358,7 @@ gtag('config', 'G-XXXXXXX');
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro6">View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary shareBtn" data-id="pro6">Share</button>
                   </div>
                   <small class="text-muted">2024</small>
@@ -524,7 +524,15 @@ gtag('config', 'G-XXXXXXX');
   });
 </script>
 
-
+<script>
+// Add event listeners to all "View" buttons
+document.querySelectorAll('.viewBtn').forEach(button => {
+  button.addEventListener('click', () => {
+    const url = button.getAttribute('data-url'); // Get the URL from the button's data attribute
+    window.location.href = url; // Navigate to the specified URL
+  });
+});
+</script>
 
 </body>
 

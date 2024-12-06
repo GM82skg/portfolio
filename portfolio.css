@@ -1,0 +1,166 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.one {
+  background: #444444;
+  min-height: 400px;
+}
+.one .row.py-lg-5 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img-bg-01 {
+  background-image: url("img/201.png");
+  background-size: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+.lead.text-muted {
+  color: rgb(255, 255, 255) !important;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.two.lead.text-muted {
+  color: #444444 !important;
+}
+
+.card {
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 1px 1px !important;
+}
+
+.two {
+  margin-top: -50px;
+}
+
+#contact {
+  margin-top: -60px;
+  margin-bottom: -90px;
+}
+
+.nav-container.text-muted {
+  color: #444444 !important;
+}
+
+.list-unstyled a {
+  text-decoration: none !important;
+}
+
+#customMessage {
+  margin-bottom: 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact-container form {
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+#services h1 {
+  text-align: left;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+  text-align: left;
+  margin: 15px 0 15px 0;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 7px;
+}
+
+.project-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  gap: 15px;
+}
+
+.project-images img {
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+#project .button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#project .button:hover {
+  background-color: #0056b3;
+}
+
+.main-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.horizontal-list li {
+  margin-right: 15px;
+}
+.horizontal-list li:last-child {
+  margin-right: 0;
+}
+.horizontal-list a {
+  text-decoration: none;
+  color: #007bff;
+}
+.horizontal-list a:hover {
+  color: #0056b3;
+}/*# sourceMappingURL=portfolio.css.map */

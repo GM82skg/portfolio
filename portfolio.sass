@@ -1,0 +1,73 @@
+@use 'main'
+    
+.project
+  background: white
+  padding: 20px
+  margin-bottom: 40px
+  border-radius: 8px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+.project h2
+  text-align: left
+  margin: 15px 0 15px 0
+
+.project img
+  width: 100%
+  height: auto
+  object-fit: contain  // Ensures the aspect ratio is preserved
+  border-radius: 7px
+
+.project-images
+  display: flex
+  justify-content: space-between
+  margin: 10px 0
+  gap: 15px
+
+.project-images img
+  //height: 180px  // Fixed height for the images
+  width: auto  // Auto width to maintain aspect ratio
+  object-fit: contain  // Ensures the aspect ratio is preserved
+  overflow: hidden  // Hides any overflow if the image exceeds the container's bounds
+  border-radius: 7px
+
+#project .button
+  display: block
+  width: 100%
+  padding: 10px
+  background-color: #007bff
+  color: white
+  border: none
+  cursor: pointer
+  text-align: center
+  border-radius: 5px
+  font-size: 16px
+
+  &:hover
+    background-color: #0056b3
+
+.main-title
+    margin-top: 50px
+    margin-bottom: 50px
+
+.horizontal-list
+  display: flex  // Arrange list items in a horizontal row
+  list-style: none  // Remove default bullet points
+  padding: 0  // Remove default padding
+  //margin: 0  // Remove default margin
+  margin-top: 15px
+  margin-bottom: 50px
+  text-decoration: none
+  font-weight: 600
+
+  li
+    margin-right: 15px  // Add spacing between items
+
+    &:last-child
+      margin-right: 0  // Remove margin from the last item
+
+  a
+    text-decoration: none  // Remove underline from links
+    color: #007bff  // Style link color
+
+    &:hover
+      color: #0056b3  // Change color on hover
