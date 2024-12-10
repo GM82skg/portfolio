@@ -100,6 +100,8 @@ gtag('config', 'G-XXXXXXX');
               <li><a href="mailto:someone@example.com" class="text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email us</a></li>
               <li><a href="#" class="text-black"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
               <li><a href="#" class="text-black"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
+              <br>
+              <li><a href="#form" class="btn btn-dark my-2" onclick="openContactForm()">Contact form</a></li>
             </ul>
           </div>
         </div>
@@ -137,11 +139,11 @@ gtag('config', 'G-XXXXXXX');
     <section class="one py-5 text-center full-width-container img-bg-01">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="font-weight-semibold">XXX</h1>
+          <h1 class="font-weight-semibold"></h1>
           <p class="lead text-muted">We are a really small team, small yes, but really efficient, with combined experience of 20 years in design production and project logostics we can handle every project!</p>
           <p>
-            <a href="#portfolio" class="btn btn-secondary my-2">Portfolio</a>
-            <a href="#contact" class="btn btn-secondary my-2">Contact</a>
+            <a href="#portfolio" class="btn btn-light my-2">Portfolio</a>
+            <a href="#contact" class="btn btn-light my-2">Contact</a>
           </p>
         </div>
       </div>
@@ -561,6 +563,19 @@ document.querySelectorAll('.viewBtn').forEach(button => {
         gdprBanner.style.display = "none";
     });
 });
+</script>
+
+<script>
+  function openContactForm() {
+    // Ensure the collapse section is open
+    const collapseElement = document.getElementById('collapseExample');
+    const bootstrapCollapse = new bootstrap.Collapse(collapseElement, { toggle: false });
+    bootstrapCollapse.show();
+
+    // Scroll to the form
+    const formElement = document.getElementById('form');
+    formElement.scrollIntoView({ behavior: 'smooth' });
+  }
 </script>
 
 </body>
