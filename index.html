@@ -113,14 +113,18 @@ gtag('config', 'G-XXXXXXX');
           <img src="img/logo-02.svg" alt="Icon" width="50" height="50">
           <strong>Accelix *</strong>
         </a>
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>-->
-        <button class="btn btn-primary my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <b>Services</b>
-        </button>
+
+        <div class="navbar-buttons d-flex" style="gap: 1%;">
+        <!-- navbar buttons -->
+          <button class="btn btn-dark my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <b>Services</b>
+          </button>
+        <!-- New Buttons -->
+          <button class="btn btn-light my-2 mx-2 fa fa-envelope" type="button" href="#contactForm" onclick="openContactForm()">
+            <b></b>
+          </button>
+        </div>
 
       </div>
     </div>
@@ -481,12 +485,15 @@ gtag('config', 'G-XXXXXXX');
 
 </main>
 <!-- END of main container -->
+
+<!-- FOOTER -->
   <footer class="text-muted py-5">
     <div class="container">
       <p class="float-right mb-1">
         <a href="#">Back to top</a>
       </p>
       <p class="mb-1"><br>Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights reserved.</p>
+      <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
     </div>
   </footer>
 
