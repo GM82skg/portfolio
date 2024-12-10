@@ -565,7 +565,7 @@ document.querySelectorAll('.viewBtn').forEach(button => {
 });
 </script>
 
-<script>
+<script>// scroll to form script
   function openContactForm() {
     // Ensure the collapse section is open
     const collapseElement = document.getElementById('collapseExample');
@@ -576,7 +576,7 @@ document.querySelectorAll('.viewBtn').forEach(button => {
     setTimeout(() => {
         const formElement = document.getElementById('contactForm');
         const formPosition = formElement.getBoundingClientRect().top + window.pageYOffset;
-        const offset = 100; // Adjust the offset value
+        const offset = 125; // Adjust the offset value
 
         window.scrollTo({
             top: formPosition - offset,
