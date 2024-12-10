@@ -90,6 +90,11 @@
   margin: 0 0 30px 0;
 }
 
+.separator2 {
+  border-top: 1px solid #c2c2c2;
+  margin: 80px 0 30px 80px;
+}
+
 .project {
   background: white;
   padding: 20px;

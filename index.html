@@ -386,7 +386,12 @@ gtag('config', 'G-XXXXXXX');
           </p>
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
-              
+              <h4>Please find below our contact information:</h4>
+              <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
+              <p>Phone: <a href="tel:+2310000000">+2310 00 00 00</a></p>
+              <p><strong>Company name</strong><br>Address: xxx1, 55555, <br>Thessaloniki, Greece</p>
+              <p>Working hours:<br><strong>Monday to Friday 9:00 to 16:00 (GMT+1)</strong></p>
+              <div class="separator2"></div>
               <!-- Start of the contact form and script -->
               <h2>Contact Form</h2>
               <div id="form" class="contact-container">
@@ -413,12 +418,6 @@ gtag('config', 'G-XXXXXXX');
                     <div id="status" class="message"></div>
                 </form>
               </div>
-
-              <br>Please find below our contact information:<br>
-              <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
-              <p>Phone: <a href="tel:+2310000000">+2310 00 00 00</a></p>
-              <p><strong>Company name</strong><br>Address: xxx1, 55555, <br>Thessaloniki, Greece</p>
-              <p>Working hours:<br><strong>Monday to Friday 9:00 to 16:00 (GMT+1)</strong></p>
 
               <script>
                   document.getElementById('contactForm').addEventListener('submit', async function (e) {
@@ -573,9 +572,17 @@ document.querySelectorAll('.viewBtn').forEach(button => {
     const bootstrapCollapse = new bootstrap.Collapse(collapseElement, { toggle: false });
     bootstrapCollapse.show();
 
-    // Scroll to the form
-    const formElement = document.getElementById('contactForm');
-    formElement.scrollIntoView({ behavior: 'smooth' });
+    // Wait for the collapsible section to expand before scrolling
+    setTimeout(() => {
+        const formElement = document.getElementById('contactForm');
+        const formPosition = formElement.getBoundingClientRect().top + window.pageYOffset;
+        const offset = 100; // Adjust the offset value
+
+        window.scrollTo({
+            top: formPosition - offset,
+            behavior: 'smooth'
+        });
+    }, 300); // Adjust delay time if necessary
   }
 </script>
 
