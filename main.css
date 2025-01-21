@@ -119,4 +119,10 @@
 
 .blurred {
   filter: blur(5px);
+}
+
+.under {
+  text-align: right;
+  margin-top: -40px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
