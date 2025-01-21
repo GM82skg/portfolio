@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Accelix Portfolio">
+    <meta name="author" content="George Makridis">
+    <title>Accelix - Industrial Design</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Basic styles to make it work without external CSS initially */
+        .img-container {
+            position: relative;
+            overflow: hidden; /* Prevents text from overflowing */
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            display: block; /* Prevents a small space below the image */
+        }
+
+        .image-text {
+            position: absolute;
+            bottom: 10px; /* Position at the bottom */
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .full-width-container{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo-02.svg" alt="Accelix Logo" width="50" height="50" class="me-2">
+                <strong>Accelix *</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="one py-5 text-center full-width-container" style="background-color: lightblue;">
+            <div class="container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1>Accelix</h1>
+                        <p class="lead text-muted">Industrial Design & Mechanical Engineering Services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <section id="services" class="py-5 text-center full-width-container">
+                    <h2>Who We Are</h2>
+                    <p class="lead">At the heart of our atelier lies a passion for engineering excellence and
+                        design... (rest of your text)</p>
+                </section>
+
+                <hr>
+
+                <section id="portfolio" class="py-5 text-center full-width-container">
+                    <h2>Portfolio</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    </div>
+                </section>
+
+                <section id="contact" class="py-5 text-center full-width-container">
+                    <h2>Contact Us</h2>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <h4>Please find below our contact information:</h4>
+                            <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="gdpr-banner" class="gdpr-banner" style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+            <p>We use cookies... <a href="./privacy-policy.html" target="_blank"
+                    rel="noopener noreferrer">Learn more</a>.</p>
+            <button id="accept-cookies" class="gdpr-button" style="background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;">Accept</button>
+        </div>
+    </main>
+
+    <footer class="text-muted py-5" style="background-color: #333; color: white; text-align: center;">
+        <div class="container">
+            <p class="mb-1">Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights
+                reserved.</p>
+            <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer" style="color: lightblue;">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
