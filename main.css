@@ -12,12 +12,23 @@
   }
 }
 .one {
+  padding-top: 100px !important;
   background: #444444;
   min-height: 400px;
 }
 .one .row.py-lg-5 {
   margin-left: 10px;
   margin-right: 10px;
+}
+.one h1 {
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+.one p {
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .img-bg-01 {
@@ -34,8 +45,16 @@
   margin-right: 20px;
 }
 
+.two {
+  margin-top: -50px;
+}
+
 .two.lead.text-muted {
   color: #444444 !important;
+}
+
+.two-text {
+  text-align: justify;
 }
 
 .card {
@@ -44,10 +63,6 @@
 
 .card-img-top {
   border-radius: 10px 10px 1px 1px !important;
-}
-
-.two {
-  margin-top: -50px;
 }
 
 #contact {
@@ -93,4 +108,11 @@
 .separator2 {
   border-top: 1px solid #c2c2c2;
   margin: 0 20% 30px 20%;
+}
+
+.navbar .btn-dark {
+  background: #FF8000;
+  border-color: #FF8000;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(255, 119, 0, 0.515);
 }/*# sourceMappingURL=main.css.map */

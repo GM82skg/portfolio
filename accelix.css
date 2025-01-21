@@ -116,6 +116,127 @@
   box-shadow: 0px 0px 10px rgba(255, 119, 0, 0.515);
 }
 
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.one {
+  padding-top: 100px !important;
+  background: #444444;
+  min-height: 400px;
+}
+
+.one .row.py-lg-5 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.one h1 {
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3rem;
+  background: rgba(35, 35, 35, 0.8);
+}
+
+.one p {
+  font-weight: 500;
+}
+
+.img-bg-01 {
+  background-image: url("img/201.png");
+  background-size: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+.lead.text-muted {
+  color: rgb(255, 255, 255) !important;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.two {
+  margin-top: -50px;
+}
+
+.two.lead.text-muted {
+  color: #444444 !important;
+}
+
+.two-text {
+  text-align: justify;
+}
+
+.card {
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 1px 1px !important;
+}
+
+#contact {
+  margin-top: -60px;
+  margin-bottom: -90px;
+}
+
+.nav-container.text-muted {
+  color: #444444 !important;
+}
+
+.list-unstyled a {
+  text-decoration: none !important;
+}
+
+#customMessage {
+  margin-bottom: 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact-container form {
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+#services h1 {
+  text-align: left;
+}
+
+.separator {
+  border-top: 1px solid #c2c2c2;
+  margin: 0 0 30px 0;
+}
+
+.separator2 {
+  border-top: 1px solid #c2c2c2;
+  margin: 0 20% 30px 20%;
+}
+
+.navbar .btn-dark {
+  background: #FF8000;
+  border-color: #FF8000;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(255, 119, 0, 0.515);
+}
+
 .project {
   background: white;
   padding: 20px;
@@ -230,4 +351,51 @@
   border-color: #FF8000;
   color: #fff;
   box-shadow: 0px 0px 10px rgba(255, 119, 0, 0.515);
-}/*# sourceMappingURL=portfolio.css.map */
+}
+
+.gdpr-banner {
+  position: fixed;
+  bottom: 10px;
+  left: 8%;
+  right: 8%;
+  background-color: rgba(70, 70, 70, 0.9);
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .gdpr-banner {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.gdpr-banner a {
+  color: #4CAF50;
+  text-decoration: underline;
+}
+.gdpr-banner a:hover {
+  color: #6ec071;
+}
+.gdpr-banner .gdpr-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.gdpr-banner .gdpr-button:hover {
+  background-color: #3d8b40;
+}
+@media (max-width: 768px) {
+  .gdpr-banner .gdpr-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=accelix.css.map */

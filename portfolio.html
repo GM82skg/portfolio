@@ -8,12 +8,10 @@
   <meta name="author" content="George Makridis">
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const storedTitle = localStorage.getItem("documentTitle");
-        if (storedTitle) {
-            document.title = storedTitle;
-        } else {
-            document.title = "Default Title"; // Fallback title
-        }
+        const currentYear = new Date().getFullYear();
+        const title = `Accelix ${currentYear}`;
+        document.title = title;
+        localStorage.setItem("documentTitle", title); // Store title in localStorage
     });
   </script>
   <title>Portfolio</title>
@@ -89,15 +87,15 @@ gtag('config', 'G-XXXXXXX');
     </div>
     <div class="navbar navbar-light bg-light shadow-sm">
       <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
           <img src="img/logo-02.svg" alt="Icon" width="50" height="50">
-          <strong>Portfolio_brand_title*</strong>
+          <strong>Accelix *</strong>
         </a>
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>-->
-        <button class="btn btn-primary my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+        <button class="btn btn-dark my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <b>Services</b>
         </button>
@@ -121,8 +119,8 @@ gtag('config', 'G-XXXXXXX');
         </div>-->
         <br>
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          <ol class="breadcrumb indexing">
+            <li class="breadcrumb-item active" aria-current=""><a href="index.html"><b>Home</b></a></li>
             <li class="breadcrumb-item"><a href="#pro1">Project 1</a></li>
             <li class="breadcrumb-item"><a href="#pro2">Project 2</a></li>
             <li class="breadcrumb-item"><a href="#pro3">Project 3</a></li>
@@ -151,87 +149,100 @@ gtag('config', 'G-XXXXXXX');
 
         <!-- Project 2 -->
         <div class="project" id="pro2">
-            <img src="img/201.png" alt="Porsche 911 Custom Build">
-            <h2>Project 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
+          <img src="img/201.png" alt="Porsche 911 Custom Build" class="project-main-img">
+          <div class="project-content">
+            <h2>Project 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam natus hic sed sunt eaque aut atque, at aperiam voluptates adipisci. Amet similique soluta eum, modi aut molestias! Non sint nihil, nobis ex consectetur iure quod excepturi laudantium minima, impedit quibusdam asperiores ducimus? Ex placeat consequatur minus laboriosam possimus asperiores aut est, similique pariatur! Exercitationem corrupti nesciunt reprehenderit dolores voluptate iusto eligendi omnis deleniti doloribus debitis recusandae odio, eos cum ipsa iste distinctio dolor eaque asperiores? Culpa numquam at eos odit soluta necessitatibus voluptatem! Voluptas ea adipisci dolorum laboriosam doloribus cupiditate similique qui rem ipsum, facere quam perferendis reprehenderit neque!</p>
-            <div class="project-images">
-                <img src="img/201.png" alt="Porsche 911 Detail 1">
-                <img src="img/201.png" alt="Porsche 911 Detail 2">
-                <img src="img/201.png" alt="Porsche 911 Detail 3">
-            </div>
-            <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
+          </div>
+          <div class="project-images">
+            <img src="img/201.png" alt="Porsche 911 Detail 1">
+            <img src="img/201.png" alt="Porsche 911 Detail 2">
+            <img src="img/201.png" alt="Porsche 911 Detail 3">
+          </div>
+          <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
         </div>
 
         <!-- Project 3 -->
         <div class="project" id="pro3">
-            <img src="img/201.png" alt="Porsche 911 Custom Build">
-            <h2>Project 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
+          <img src="img/201.png" alt="Porsche 911 Custom Build" class="project-main-img">
+          <div class="project-content">
+            <h2>Project 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam natus hic sed sunt eaque aut atque, at aperiam voluptates adipisci. Amet similique soluta eum, modi aut molestias! Non sint nihil, nobis ex consectetur iure quod excepturi laudantium minima, impedit quibusdam asperiores ducimus? Ex placeat consequatur minus laboriosam possimus asperiores aut est, similique pariatur! Exercitationem corrupti nesciunt reprehenderit dolores voluptate iusto eligendi omnis deleniti doloribus debitis recusandae odio, eos cum ipsa iste distinctio dolor eaque asperiores? Culpa numquam at eos odit soluta necessitatibus voluptatem! Voluptas ea adipisci dolorum laboriosam doloribus cupiditate similique qui rem ipsum, facere quam perferendis reprehenderit neque!</p>
-            <div class="project-images">
-                <img src="img/201.png" alt="Porsche 911 Detail 1">
-                <img src="img/201.png" alt="Porsche 911 Detail 2">
-                <img src="img/201.png" alt="Porsche 911 Detail 3">
-            </div>
-            <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
+          </div>
+          <div class="project-images">
+            <img src="img/201.png" alt="Porsche 911 Detail 1">
+            <img src="img/201.png" alt="Porsche 911 Detail 2">
+            <img src="img/201.png" alt="Porsche 911 Detail 3">
+          </div>
+          <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
         </div>
 
         <!-- Project 4 -->
         <div class="project" id="pro4">
-            <img src="img/201.png" alt="Porsche 911 Custom Build">
-            <h2>Project 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
+          <img src="img/201.png" alt="Porsche 911 Custom Build" class="project-main-img">
+          <div class="project-content">
+            <h2>Project 4: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam natus hic sed sunt eaque aut atque, at aperiam voluptates adipisci. Amet similique soluta eum, modi aut molestias! Non sint nihil, nobis ex consectetur iure quod excepturi laudantium minima, impedit quibusdam asperiores ducimus? Ex placeat consequatur minus laboriosam possimus asperiores aut est, similique pariatur! Exercitationem corrupti nesciunt reprehenderit dolores voluptate iusto eligendi omnis deleniti doloribus debitis recusandae odio, eos cum ipsa iste distinctio dolor eaque asperiores? Culpa numquam at eos odit soluta necessitatibus voluptatem! Voluptas ea adipisci dolorum laboriosam doloribus cupiditate similique qui rem ipsum, facere quam perferendis reprehenderit neque!</p>
-            <div class="project-images">
-                <img src="img/201.png" alt="Porsche 911 Detail 1">
-                <img src="img/201.png" alt="Porsche 911 Detail 2">
-                <img src="img/201.png" alt="Porsche 911 Detail 3">
-            </div>
-            <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
+          </div>
+          <div class="project-images">
+            <img src="img/201.png" alt="Porsche 911 Detail 1">
+            <img src="img/201.png" alt="Porsche 911 Detail 2">
+            <img src="img/201.png" alt="Porsche 911 Detail 3">
+          </div>
+          <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
         </div>
 
         <!-- Project 5 -->
         <div class="project" id="pro5">
-            <img src="img/201.png" alt="Porsche 911 Custom Build">
-            <h2>Project 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
+          <img src="img/201.png" alt="Porsche 911 Custom Build" class="project-main-img">
+          <div class="project-content">
+            <h2>Project 5: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam natus hic sed sunt eaque aut atque, at aperiam voluptates adipisci. Amet similique soluta eum, modi aut molestias! Non sint nihil, nobis ex consectetur iure quod excepturi laudantium minima, impedit quibusdam asperiores ducimus? Ex placeat consequatur minus laboriosam possimus asperiores aut est, similique pariatur! Exercitationem corrupti nesciunt reprehenderit dolores voluptate iusto eligendi omnis deleniti doloribus debitis recusandae odio, eos cum ipsa iste distinctio dolor eaque asperiores? Culpa numquam at eos odit soluta necessitatibus voluptatem! Voluptas ea adipisci dolorum laboriosam doloribus cupiditate similique qui rem ipsum, facere quam perferendis reprehenderit neque!</p>
-            <div class="project-images">
-                <img src="img/201.png" alt="Porsche 911 Detail 1">
-                <img src="img/201.png" alt="Porsche 911 Detail 2">
-                <img src="img/201.png" alt="Porsche 911 Detail 3">
-            </div>
-            <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
+          </div>
+          <div class="project-images">
+            <img src="img/201.png" alt="Porsche 911 Detail 1">
+            <img src="img/201.png" alt="Porsche 911 Detail 2">
+            <img src="img/201.png" alt="Porsche 911 Detail 3">
+          </div>
+          <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
         </div>
 
         <!-- Project 6 -->
         <div class="project" id="pro6">
-            <img src="img/201.png" alt="Porsche 911 Custom Build">
-            <h2>Project 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
+          <img src="img/201.png" alt="Porsche 911 Custom Build" class="project-main-img">
+          <div class="project-content">
+            <h2>Project 6: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, aut!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam natus hic sed sunt eaque aut atque, at aperiam voluptates adipisci. Amet similique soluta eum, modi aut molestias! Non sint nihil, nobis ex consectetur iure quod excepturi laudantium minima, impedit quibusdam asperiores ducimus? Ex placeat consequatur minus laboriosam possimus asperiores aut est, similique pariatur! Exercitationem corrupti nesciunt reprehenderit dolores voluptate iusto eligendi omnis deleniti doloribus debitis recusandae odio, eos cum ipsa iste distinctio dolor eaque asperiores? Culpa numquam at eos odit soluta necessitatibus voluptatem! Voluptas ea adipisci dolorum laboriosam doloribus cupiditate similique qui rem ipsum, facere quam perferendis reprehenderit neque!</p>
-            <div class="project-images">
-                <img src="img/201.png" alt="Porsche 911 Detail 1">
-                <img src="img/201.png" alt="Porsche 911 Detail 2">
-                <img src="img/201.png" alt="Porsche 911 Detail 3">
-            </div>
-            <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
+          </div>
+          <div class="project-images">
+            <img src="img/201.png" alt="Porsche 911 Detail 1">
+            <img src="img/201.png" alt="Porsche 911 Detail 2">
+            <img src="img/201.png" alt="Porsche 911 Detail 3">
+          </div>
+          <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
         </div>
-
+        <!-- END of PROJECTS -->
     </section>
 
 </main>
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-right mb-1">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1"><br>Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights reserved.</p>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-right mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1"><br>Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights reserved.</p>
+    <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+  </div>
+</footer>
 
+<script src="script.js"></script>
 
-  <script>
-    // JavaScript to dynamically set the current year
-    document.getElementById('current-year-footer').textContent = new Date().getFullYear();
-  </script>
+<script>
+  // JavaScript to dynamically set the current year
+  document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+</script>
 
 </body>
 
