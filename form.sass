@@ -1,0 +1,48 @@
+$bg-color: #f4f4f9
+$dark-color: #333
+$white-color: #fff
+$light-color: #ccc
+$primary-color: #007BFF
+$primary-darker: #0056b3
+$text-color: #555
+$heading-color: #444
+
+form
+  display: flex
+  flex-direction: column
+  width: 600px
+
+  h1
+    text-align: Left
+    color: $heading-color
+
+  label
+    margin-bottom: 5px
+    font-weight: bold
+    color: $text-color
+
+  input, textarea, button
+    font-size: 16px
+    padding: 10px
+    margin-bottom: 15px
+    border: 1px solid $light-color
+    border-radius: 5px
+    outline: none
+    transition: border-color 0.3s ease
+
+  input:focus, textarea:focus
+    border-color: $primary-color
+
+  button
+    background-color: $primary-color
+    color: $white-color
+    border: none
+    cursor: pointer
+    transition: background-color 0.3s ease
+
+    &:hover
+      background-color: $primary-darker
+
+  .message
+    text-align: center
+    font-size: 14px

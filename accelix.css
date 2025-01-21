@@ -127,10 +127,6 @@
   margin-bottom: 50px;
 }
 
-.btn .fa-envelope {
-  border-color: #444;
-}
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -261,10 +257,6 @@
   text-align: right;
   margin-top: -40px;
   margin-bottom: 50px;
-}
-
-.btn .fa-envelope {
-  border-color: #444;
 }
 
 .project {

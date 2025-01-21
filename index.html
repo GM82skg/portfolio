@@ -95,8 +95,9 @@
               <li><a href="#" class="text-black"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
               <li><a href="#" class="text-black"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
               <br>
-              <li><a href="#contactForm" class="btn btn-dark my-2" onclick="openContactForm()">Contact form</a></li>
-              <li><a href="#who" class="btn btn-primary my-2">Who we are</a></li>
+              <li><a href="#contactForm" class="btn btn-dark my-2" onclick="openContactForm()">Get in Touch</a></li>
+              <li><a href="#who" class="btn btn-dark my-2">Who we are</a></li>
+              <li><button class="btn btn-dark papaya my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation"><b>Back</b></button></li>
             </ul>
           </div>
         </div>
@@ -111,7 +112,7 @@
 
         <div class="navbar-buttons d-flex" style="gap: 1%;">
         <!-- navbar buttons -->
-          <button class="btn btn-dark my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          <button class="btn btn-dark papaya my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
             aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <b>Services</b>
           </button>
@@ -124,6 +125,7 @@
       </div>
     </div>
   </header>
+  <!-- END of navbar -->
 
   <!-- CUSTOM MESSAGE -->
   <div id="customMessage" class="alert alert-warning alert-dismissible fade show text-center d-none" role="alert">
@@ -379,7 +381,7 @@
           <!--<h1 class="font-weight-bold">Contact</h1>-->
           <p class="d-inline-flex gap-1">
             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Contact Us
+              Get in Touch
             </button>
           </p>
           <div class="collapse" id="collapseExample">
@@ -390,9 +392,10 @@
               <p><strong>Company name</strong><br>Address: xxx1, 55555, <br>Thessaloniki, Greece</p>
               <p>Working hours:<br><strong>Monday to Friday 9:00 to 16:00 (GMT+1)</strong></p>
               <div class="separator2"></div>
+
               <!-- Start of the contact form and script -->
               <h2>Contact Form</h2>
-              <div id="form" class="contact-container">
+              <div id="form" class="col-sm-12 contact-container">
                 <form id="contactForm">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>

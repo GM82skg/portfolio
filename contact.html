@@ -4,19 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="We’d love to hear from you! Whether you have a project in mind, need advice, or want to collaborate, our team is here to help. Contact us, from Monday to Friday, 9:00 AM – 4:00 PM (GMT+1).">
+  <meta name="description" content="We offer a comprehensive suite of design and engineering services, combining creativity, technical expertise, and meticulous attention to detail. Whether developing new products or refining existing concepts, we ensure every project is crafted with precision and purpose.">
   <meta name="author" content="George Makridis">
+  <!--<meta name="generator" content="Hugo 0.72.0">-->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const storedTitle = localStorage.getItem("documentTitle");
-        if (storedTitle) {
-            document.title = storedTitle;
-        } else {
-            document.title = "Default Title"; // Fallback title
-        }
+        const currentYear = new Date().getFullYear();
+        const title = `Accelix ${currentYear}`;
+        document.title = title;
+        localStorage.setItem("documentTitle", title); // Store title in localStorage
     });
   </script>
-  <title>Contact</title>
+  <title>Accelix - industrial Design & Mechanical Engineering Services - CNC - 3D Printing</title>
 
   <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
 
@@ -115,70 +114,81 @@ gtag('config', 'G-XXXXXXX');
 
 <body>
 <!-- navbar -->
-  <header>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="collapse bg-light" id="navbarHeader">
-      <div id="services" class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-7 py-4">
-            <h1 class="text-black">Services</h1>
-            <p class="nav-container text-muted">We offer a comprehensive suite of design and engineering services, combining creativity, technical expertise, and meticulous attention to detail. Whether developing new products or refining existing concepts, we ensure every project is crafted with precision and purpose.</p>
-              
-              <h5>1. Industrial Design</h5>
-              <p class="nav-container text-muted">Transforming ideas into functional and visually compelling solutions. From product aesthetics to user experience, we craft designs that blend form and function seamlessly.</p>
+<header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="collapse bg-light" id="navbarHeader">
+    <div id="services" class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <!-- SERVICES -->
+          <h1 class="text-black">Services</h1>
+          <p class="nav-container text-muted">We offer a comprehensive suite of design and engineering services, combining creativity, technical expertise, and meticulous attention to detail. Whether developing new products or refining existing concepts, we ensure every project is crafted with precision and purpose.</p>
+            
+            <h5>1. Industrial Design</h5>
+            <p class="nav-container text-muted">Transforming ideas into functional and visually compelling solutions. From product aesthetics to user experience, we craft designs that blend form and function seamlessly.</p>
 
-              <h5>2. Product Development & Engineering</h5>
-              <p class="nav-container text-muted">We manage the entire product lifecycle with a systematic approach:</p>
-              <ul>
-              <li><b>Research & Ideation:</b> Turning concepts into feasible designs through in-depth research and innovative thinking.</li>
-              <li><b>CAD Design & 3D Modeling:</b> Creating detailed, precise digital models for analysis and prototyping.</li>
-              <li><b>Prototyping:</b> Utilizing advanced 3D printing and fabrication technologies to bring designs to life.</li>
-              <li><b>Validation & Testing:</b> Ensuring functionality, durability, and performance through rigorous testing.</li>
-              </ul>
-
-              <h5>3. Custom Solutions</h5>
-              <p class="nav-container text-muted">Tailored design and engineering services for specialized needs. Whether you’re an entrepreneur, startup, or established company, we provide innovative solutions that align with your goals and vision.</p>
-
-              <h5>4. Advanced Manufacturing Capabilities</h5>
-              <p class="nav-container text-muted">Leveraging our network of trusted partners equipped with state-of-the-art CNC machining and laser cutting technologies, we deliver high-quality components and prototypes with unmatched precision. While we focus on design and engineering, our collaboration with specialized manufacturers ensures optimal performance and aesthetic excellence in every project.</p>
-          </div>
-          <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-black">Contact</h4>
-            <ul class="list-unstyled">
-              <li><a href="mailto:someone@example.com" class="text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email us</a></li>
-              <li><a href="#" class="text-black"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-              <li><a href="#" class="text-black"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
+            <h5>2. Product Development & Engineering</h5>
+            <p class="nav-container text-muted">We manage the entire product lifecycle with a systematic approach:</p>
+            <ul>
+            <li><b>Research & Ideation:</b> Turning concepts into feasible designs through in-depth research and innovative thinking.</li>
+            <li><b>CAD Design & 3D Modeling:</b> Creating detailed, precise digital models for analysis and prototyping.</li>
+            <li><b>Prototyping:</b> Utilizing advanced 3D printing and fabrication technologies to bring designs to life, faster.</li>
+            <li><b>Validation & Testing:</b> Ensuring functionality, durability, and performance through rigorous testing.</li>
             </ul>
-          </div>
+
+            <h5>3. Reverse Engineering</h5>
+            <p class="nav-container text-muted">Using advanced 3D scanning and digital modeling tools, we analyze and recreate existing components or products with precision. Whether for restoration, improvement, or reproduction, our reverse engineering services unlock possibilities for innovation and refinement.</p>
+
+            <h5>4. Custom Solutions</h5>
+            <p class="nav-container text-muted">Tailored design and engineering services for specialized needs. Whether you’re an entrepreneur, startup, or established company, we provide innovative solutions that align with your goals and vision.</p>
+
+            <h5>5. Advanced Manufacturing Capabilities</h5>
+            <p class="nav-container text-muted">Leveraging our network of trusted partners equipped with state-of-the-art CNC machining and laser cutting and bending technologies, we deliver high-quality components and prototypes with unmatched precision. While we focus on design and engineering, our collaboration with specialized manufacturers ensures optimal performance and aesthetic excellence in every project.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-black">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="mailto:someone@example.com" class="text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email us</a></li>
+            <li><a href="#" class="text-black"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+            <li><a href="#" class="text-black"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
+            <br>
+            <li><a href="#contactForm" class="btn btn-dark my-2" onclick="openContactForm()">Get in Touch</a></li>
+            <li><a href="#who" class="btn btn-primary my-2">Who we are</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="navbar navbar-light bg-light shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="img/logo-02.svg" alt="Icon" width="50" height="50">
-          <strong>Portfolio_brand_title*</strong>
-        </a>
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>-->
-        <button class="btn btn-primary my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+  </div>
+  <div class="navbar navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="img/logo-02.svg" alt="Icon" width="50" height="50">
+        <strong>Accelix *</strong>
+      </a>
+
+      <div class="navbar-buttons d-flex" style="gap: 1%;">
+      <!-- navbar buttons -->
+        <button class="btn btn-dark my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <b>Services</b>
         </button>
-
+      <!-- New Buttons -->
+        <button class="btn btn-light my-2 mx-2 fa fa-envelope" type="button" href="#contactForm" onclick="openContactForm()">
+          <b></b>
+        </button>
       </div>
+
     </div>
-  </header>
+  </div>
+</header>
 <!-- END of navbar -->
   <main>
 
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
-                    <h1 class="font-weight-bold mb-0">Contact Guide</h1>
-                    <button type="button" class="btn btn-primary ms-3" onclick="location.href='index.html'">Back to Home</button>
+                    <h1 class="font-weight-bold mb-0">How to get in touch with us</h1>
+                    <button type="button" class="btn btn-dark ms-3" onclick="location.href='index.html'">Back to Home</button>
                 </div>
                 
                 <p>We’d love to hear from you! Whether you have a project in mind, need advice, or want to collaborate, our team is here to help. Here’s how you can reach us:</p>
@@ -197,7 +207,6 @@ gtag('config', 'G-XXXXXXX');
                 <p>Stay updated on our latest projects and connect with us:</p>
                 
                 <ul class="list-unstyled">
-                  <li><a href="mailto:someone@example.com" class="text-black"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email us</a></li>
                   <li><a href="#" class="text-black"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
                   <li><a href="#" class="text-black"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
                 </ul>
@@ -276,7 +285,7 @@ gtag('config', 'G-XXXXXXX');
 
                 <p></p>
 
-                <button type="button" class="btn btn-primary" onclick="location.href='index.html'">Back to Home</button>
+                <button type="button" class="btn btn-dark" onclick="location.href='index.html'">Back to Home</button>
             </div>
         </div>
         
@@ -284,14 +293,16 @@ gtag('config', 'G-XXXXXXX');
     </div> 
   </main>
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-right mb-1">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1"><br>Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights reserved.</p>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-right mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1"><br>Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights reserved.</p>
+    <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+  </div>
+</footer>
 
 
   <script>
