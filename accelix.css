@@ -24,10 +24,11 @@
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.3rem;
-  background: rgba(35, 35, 35, 0.8);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 .one p {
   font-weight: 500;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .img-bg-01 {
@@ -114,6 +115,10 @@
   border-color: #FF8000;
   color: #fff;
   box-shadow: 0px 0px 10px rgba(255, 119, 0, 0.515);
+}
+
+.blurred {
+  filter: blur(5px);
 }
 
 .bd-placeholder-img {
@@ -144,11 +149,12 @@
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.3rem;
-  background: rgba(35, 35, 35, 0.8);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .one p {
   font-weight: 500;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .img-bg-01 {
@@ -235,6 +241,10 @@
   border-color: #FF8000;
   color: #fff;
   box-shadow: 0px 0px 10px rgba(255, 119, 0, 0.515);
+}
+
+.blurred {
+  filter: blur(5px);
 }
 
 .project {

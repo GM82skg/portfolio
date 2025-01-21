@@ -75,7 +75,7 @@
               <ul>
               <li><b>Research & Ideation:</b> Turning concepts into feasible designs through in-depth research and innovative thinking.</li>
               <li><b>CAD Design & 3D Modeling:</b> Creating detailed, precise digital models for analysis and prototyping.</li>
-              <li><b>Prototyping:</b> Utilizing advanced 3D printing and fabrication technologies to bring designs to life.</li>
+              <li><b>Prototyping:</b> Utilizing advanced 3D printing and fabrication technologies to bring designs to life, faster.</li>
               <li><b>Validation & Testing:</b> Ensuring functionality, durability, and performance through rigorous testing.</li>
               </ul>
 
@@ -96,6 +96,7 @@
               <li><a href="#" class="text-black"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
               <br>
               <li><a href="#contactForm" class="btn btn-dark my-2" onclick="openContactForm()">Contact form</a></li>
+              <li><a href="#who" class="btn btn-primary my-2">Who we are</a></li>
             </ul>
           </div>
         </div>
@@ -153,7 +154,7 @@
       <div class="container"><!-- main container #DON'T change it -->
 
         <!-- About Us -->
-        <section class="two py-5 text-center full-width-container">
+        <section id="who" class="two py-5 text-center full-width-container">
             <div class="row py-lg-5">
                 <div class="col-lg-12 col-md-8 mx-auto">
                     <h1 class="font-weight-bold">Who we are</h1>
@@ -167,10 +168,11 @@
         </section>
         <!-- END of About Us -->
         <div class="separator"></div>
-<!-- porfolio preview -->
-<section class="two py-5 text-center full-width-container">
-  <h1 class="font-weight-bold">Portfolio</h1>
-        <div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <!-- porfolio preview -->
+        <section id="portfolio-section" class="two py-5 text-center full-width-container">
+          <h1 class="font-weight-bold">Portfolio</h1>
+          <div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
         <!-- Project 1 -->
           <div id="pro1" class="col">
@@ -191,8 +193,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <!--<p class="card-text">Project Title 1</p>-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro1">View</button>
@@ -224,8 +225,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <!--<p class="card-text">Project Title 1</p>-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro2">View</button>
@@ -257,8 +257,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <!--<p class="card-text">Project Title 1</p>-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro3">View</button>
@@ -290,8 +289,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <!--<p class="card-text">Project Title 1</p>-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro4">View</button>
@@ -323,8 +321,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <!--<p class="card-text">Project Title 1</p>-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro5">View</button>
@@ -356,8 +353,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <!--<p class="card-text">Project Title 1</p>-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary viewBtn" data-url="portfolio.html#pro6">View</button>
@@ -369,10 +365,11 @@
             </div>
           </div>
           <!-- Repeat for other projects -->
-          
+
         </div>
 </section>
 <!-- END of porfolio preview -->
+
 <!-- contact space -->
 <section id="contact" class="py-5 text-center full-width-container">
   <div class="row py-lg-5">
@@ -585,6 +582,28 @@ document.querySelectorAll('.viewBtn').forEach(button => {
             behavior: 'smooth'
         });
     }, 300); // Adjust delay time if necessary
+  }
+</script>
+
+<script>// Blurred section & buttons disable
+  const portfolioSection = document.querySelector('#portfolio-section');
+
+  // Toggle the 'blurred' class and disable/enable buttons
+  portfolioSection.classList.toggle('blurred');
+
+  // Get all buttons inside the blurred section
+  const buttons = portfolioSection.querySelectorAll('button');
+
+  if (portfolioSection.classList.contains('blurred')) {
+    // Disable buttons
+    buttons.forEach(button => {
+      button.disabled = true; // This makes the button unresponsive
+    });
+  } else {
+    // Enable buttons when blur is removed
+    buttons.forEach(button => {
+      button.disabled = false; // Re-enable the button
+    });
   }
 </script>
 
