@@ -172,7 +172,7 @@
         <div class="separator"></div>
 
         <!-- porfolio preview -->
-        <section id="portfolio-section" class="two py-5 text-center full-width-container">
+        <section id="portfolio-section" class="two py-5 text-center full-width-container non-interactive" oncontextmenu="return false;"><!-- non interactive & oncontextmenu should be removed later -->
           <h1 class="font-weight-bold">Portfolio</h1>
           <div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
@@ -368,6 +368,11 @@
           </div>
           <!-- Repeat for other projects -->
         </div>
+        <script>
+          const div = document.querySelector('.non-interactive');
+          // Disable right-click for the div and its contents
+          div.addEventListener('contextmenu', (e) => e.preventDefault());
+        </script>
 </section>
 <div class="under">
   <p>* why is this blured? <u>Because we are not ready yet!</u></p>

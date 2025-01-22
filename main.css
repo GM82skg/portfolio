@@ -32,7 +32,7 @@
 }
 
 .img-bg-01 {
-  background-image: url("img/hero.png");
+  background-image: url("img/CPiV3_XL_HP4.png");
   background-size: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,6 +131,7 @@
 
 .blurred {
   filter: blur(5px);
+  pointer-events: none;
 }
 
 .under {
