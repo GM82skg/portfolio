@@ -12,9 +12,10 @@
   }
 }
 .one {
-  padding-top: 100px !important;
+  padding-top: 110px !important;
   background: #444444;
-  min-height: 400px;
+  min-height: 90vh;
+  box-shadow: 0 15px rgba(56, 56, 56, 0.2509803922);
 }
 .one .row.py-lg-5 {
   margin-left: 10px;
@@ -33,7 +34,7 @@
 
 .img-bg-01 {
   background-image: url("img/hero.png");
-  background-size: center;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);

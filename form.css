@@ -1,16 +1,17 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  max-width: 600px;
 }
 form h1 {
   text-align: Left;
-  color: #444;
+  text-align-color: #444;
 }
 form label {
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 600;
   color: #555;
+  margin-left: 3px;
 }
 form input, form textarea, form button {
   font-size: 16px;
@@ -37,4 +38,12 @@ form button:hover {
 form .message {
   text-align: center;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+  }
 }/*# sourceMappingURL=form.css.map */
