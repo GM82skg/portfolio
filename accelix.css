@@ -34,7 +34,7 @@
 
 .img-bg-01 {
   background-image: url("img/cinepi003.png");
-  background-size: auto;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
@@ -183,7 +183,7 @@
 
 .img-bg-01 {
   background-image: url("img/cinepi003.png");
-  background-size: auto;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
