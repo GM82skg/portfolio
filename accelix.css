@@ -13,7 +13,7 @@
 }
 @media (max-width: 768px) {
   .img-bg-01 {
-    background-image: url("img/cinepi003.png");
+    background-image: url("img/cinepi005.png");
     background-size: auto 100% !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,8 +42,8 @@
 }
 
 .img-bg-01 {
-  background-image: url("img/cinepi003.png");
-  background-size: auto;
+  background-image: url("img/cinepi005.png");
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
@@ -168,7 +168,7 @@
 }
 @media (max-width: 768px) {
   .img-bg-01 {
-    background-image: url("img/cinepi003.png");
+    background-image: url("img/cinepi005.png");
     background-size: auto 100% !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,8 +200,8 @@
 }
 
 .img-bg-01 {
-  background-image: url("img/cinepi003.png");
-  background-size: auto;
+  background-image: url("img/cinepi005.png");
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
