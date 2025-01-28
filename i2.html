@@ -2,142 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Accelix Portfolio">
-    <meta name="author" content="George Makridis">
-    <title>Accelix - Industrial Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="We offer a comprehensive suite of design and engineering services, combining creativity, technical expertise, and meticulous attention to detail. Whether developing new products or refining existing concepts, we ensure every project is crafted with precision and purpose.">
+  <meta name="author" content="George Makridis">
+  <title>Accelyx - Industrial Design & Mechanical Engineering Services - CNC - 3D Printing</title>
+  <link rel="icon" type="image/x-icon" href="/img/logo_white-02.svg">
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Basic styles to make it work without external CSS initially */
-        .img-container {
-            position: relative;
-            overflow: hidden; /* Prevents text from overflowing */
-        }
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="gdpr.css">
 
-        .img-container img {
-            width: 100%;
-            height: 225px;
-            object-fit: cover;
-            display: block; /* Prevents a small space below the image */
-        }
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNJN1PF3CS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DNJN1PF3CS');
+  </script>
 
-        .image-text {
-            position: absolute;
-            bottom: 10px; /* Position at the bottom */
-            left: 10px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        .full-width-container{
-            width: 100%;
-        }
-    </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentYear = new Date().getFullYear();
+      const title = `Accelyx ${currentYear}`;
+      document.title = title;
+      localStorage.setItem("documentTitle", title);
+    });
+  </script>
 </head>
 
 <body>
+  <!-- Navbar -->
+  <header>
+    <div class="collapse bg-light" id="navbarHeader">
+      <div id="services" class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h1 class="text-black">Services</h1>
+            <p class="nav-container text-muted">We offer a comprehensive suite of design and engineering services, combining creativity, technical expertise, and meticulous attention to detail. Whether developing new products or refining existing concepts, we ensure every project is crafted with precision and purpose.</p>
+            <!-- Services content here -->
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-black">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="mailto:someone@example.com" class="text-black" aria-label="Email us"><i class="fa fa-envelope-square" aria-hidden="true"></i> Email us</a></li>
+              <li><a href="#" class="text-black" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+              <li><a href="#" class="text-black" aria-label="Behance"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
+              <br>
+              <li><a href="#contactForm" class="btn btn-dark my-2" onclick="openContactForm()" aria-label="Get in Touch">Get in Touch</a></li>
+              <li><a href="#who" class="btn btn-dark my-2" aria-label="Who we are">Who we are</a></li>
+              <li><button class="btn btn-dark papaya my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation"><b>Back</b></button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center" aria-label="Accelyx Home">
+          <img src="img/logo-02.svg" alt="Accelyx Logo" width="50" height="50">
+          <strong>Accelyx *</strong>
+        </a>
+        <div class="navbar-buttons d-flex" style="gap: 1%;">
+          <button class="btn btn-dark papaya my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <b>Services</b>
+          </button>
+          <button class="btn btn-light my-2 mx-2 fa fa-envelope" type="button" onclick="openContactForm()" aria-label="Contact Us"></button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo-02.svg" alt="Accelix Logo" width="50" height="50" class="me-2">
-                <strong>Accelix *</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="one py-5 text-center full-width-container img-bg-01">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="font-weight-semibold">Accelyx</h1>
+          <p class="lead text-muted">Industrial Design & Mechanical Engineering Services - CNC - 3D Printing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="who" class="two py-5 text-center full-width-container">
+      <div class="row py-lg-5">
+        <div class="col-lg-12 col-md-8 mx-auto">
+          <h1 class="font-weight-bold">Who we are</h1>
+          <p class="lead two-text">At the core of our atelier is a shared passion for engineering excellence and innovative design. We are a compact yet dynamic team of two—an industrial designer and a mechanical engineer—united by a mission to turn bold ideas into extraordinary realities. By seamlessly blending creativity with precision, we merge artistic vision with technical expertise to bring projects to life.</p>
+          <!-- Rest of the About Us content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section" class="two py-5 text-center full-width-container non-interactive">
+      <h1 class="font-weight-bold">Portfolio</h1>
+      <div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Portfolio items here -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center full-width-container">
+      <div class="row py-lg-5">
+        <div class="col-lg-12 col-md-8 mx-auto">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" aria-label="Get in Touch">
+            Get in Touch
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <!-- Contact form and details here -->
             </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section class="one py-5 text-center full-width-container" style="background-color: lightblue;">
-            <div class="container">
-                <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1>Accelix</h1>
-                        <p class="lead text-muted">Industrial Design & Mechanical Engineering Services</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Footer -->
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-right mb-1">
+        <a href="#" aria-label="Back to top"><svg height="40" width="40" xmlns="http://www.w3.org/2000/svg"><image height="40" width="40" href="img/arrow-up.svg" alt="Back to top" /></svg></a>
+      </p>
+      <p class="mb-1"><br>Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights reserved.</p>
+      <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </div>
+  </footer>
 
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <section id="services" class="py-5 text-center full-width-container">
-                    <h2>Who We Are</h2>
-                    <p class="lead">At the heart of our atelier lies a passion for engineering excellence and
-                        design... (rest of your text)</p>
-                </section>
-
-                <hr>
-
-                <section id="portfolio" class="py-5 text-center full-width-container">
-                    <h2>Portfolio</h2>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    </div>
-                </section>
-
-                <section id="contact" class="py-5 text-center full-width-container">
-                    <h2>Contact Us</h2>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            <h4>Please find below our contact information:</h4>
-                            <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <div id="gdpr-banner" class="gdpr-banner" style="background-color: #f0f0f0; padding: 10px; text-align: center;">
-            <p>We use cookies... <a href="./privacy-policy.html" target="_blank"
-                    rel="noopener noreferrer">Learn more</a>.</p>
-            <button id="accept-cookies" class="gdpr-button" style="background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 8px 16px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;">Accept</button>
-        </div>
-    </main>
-
-    <footer class="text-muted py-5" style="background-color: #333; color: white; text-align: center;">
-        <div class="container">
-            <p class="mb-1">Copyright &copy; <span id="current-year-footer"></span> <b>GM82*</b>. All rights
-                reserved.</p>
-            <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer" style="color: lightblue;">Privacy Policy</a>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('current-year-footer').textContent = new Date().getFullYear();
-    </script>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
