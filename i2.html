@@ -44,7 +44,22 @@
           <div class="col-sm-8 col-md-7 py-4">
             <h1 class="text-black">Services</h1>
             <p class="nav-container text-muted">We offer a comprehensive suite of design and engineering services, combining creativity, technical expertise, and meticulous attention to detail. Whether developing new products or refining existing concepts, we ensure every project is crafted with precision and purpose.</p>
-            <!-- Services content here -->
+            <h5>1. Industrial Design</h5>
+            <p class="nav-container text-muted">Transforming ideas into functional and visually compelling solutions. From product aesthetics to user experience, we craft designs that blend form and function seamlessly.</p>
+            <h5>2. Product Development & Engineering</h5>
+            <p class="nav-container text-muted">We manage the entire product lifecycle with a systematic approach:</p>
+            <ul>
+              <li><b>Research & Ideation:</b> Turning concepts into feasible designs through in-depth research and innovative thinking.</li>
+              <li><b>CAD Design & 3D Modeling:</b> Creating detailed, precise digital models for analysis and prototyping.</li>
+              <li><b>Prototyping:</b> Utilizing advanced 3D printing and fabrication technologies to bring designs to life, faster.</li>
+              <li><b>Validation & Testing:</b> Ensuring functionality, durability, and performance through rigorous testing.</li>
+            </ul>
+            <h5>3. Reverse Engineering</h5>
+            <p class="nav-container text-muted">Using advanced 3D scanning and digital modeling tools, we analyze and recreate existing components or products with precision. Whether for restoration, improvement, or reproduction, our reverse engineering services unlock possibilities for innovation and refinement.</p>
+            <h5>4. Custom Solutions</h5>
+            <p class="nav-container text-muted">Tailored design and engineering services for specialized needs. Whether you’re an entrepreneur, startup, or established company, we provide innovative solutions that align with your goals and vision.</p>
+            <h5>5. Advanced Manufacturing Capabilities</h5>
+            <p class="nav-container text-muted">Leveraging our network of trusted partners equipped with state-of-the-art CNC machining and laser cutting and bending technologies, we deliver high-quality components and prototypes with unmatched precision. While we focus on design and engineering, our collaboration with specialized manufacturers ensures optimal performance and aesthetic excellence in every project.</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-black">Contact</h4>
@@ -77,6 +92,12 @@
     </div>
   </header>
 
+  <!-- Custom Message -->
+  <div id="customMessage" class="alert alert-warning alert-dismissible fade show text-center d-none" role="alert">
+    <u><b>This page is still in Development</b></u> <br><u>Working hours: Monday to Friday 9:00 to 16:00 (GMT+1)</u>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
@@ -95,7 +116,8 @@
         <div class="col-lg-12 col-md-8 mx-auto">
           <h1 class="font-weight-bold">Who we are</h1>
           <p class="lead two-text">At the core of our atelier is a shared passion for engineering excellence and innovative design. We are a compact yet dynamic team of two—an industrial designer and a mechanical engineer—united by a mission to turn bold ideas into extraordinary realities. By seamlessly blending creativity with precision, we merge artistic vision with technical expertise to bring projects to life.</p>
-          <!-- Rest of the About Us content -->
+          <p class="lead two-text">Our versatile team specializes in the entire product development lifecycle: from initial concept development and meticulous research to cutting-edge CAD design, prototyping, rigorous validation, and final delivery. Driven by a commitment to innovation and a deep respect for craftsmanship, we push boundaries while staying true to the authenticity of every project we undertake.</p>
+          <p class="lead two-text">Based in Greece but with a global outlook, we aim to make our mark by delivering services that combine technical ingenuity with aesthetic sophistication. Whether designing bespoke automotive components, crafting unique products, or engineering one-of-a-kind solutions, we are guided by a singular vision: to create with precision, passion, and purpose.</p>
         </div>
       </div>
     </section>
@@ -105,6 +127,9 @@
       <h1 class="font-weight-bold">Portfolio</h1>
       <div id="portfolio" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <!-- Portfolio items here -->
+      </div>
+      <div class="under">
+        <p>* why is this blured? <u>Because we are not ready yet!</u></p>
       </div>
     </section>
 
@@ -117,13 +142,50 @@
           </button>
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
-              <!-- Contact form and details here -->
+              <h4>Please find below our contact information:</h4>
+              <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
+              <p>Phone: <a href="tel:+2310000000">+2310 00 00 00</a></p>
+              <p><strong>Company name</strong><br>Address: xxx1, 55555, <br>Thessaloniki, Greece</p>
+              <p>Working hours:<br><strong>Monday to Friday 9:00 to 16:00 (GMT+1)</strong></p>
+              <div class="separator2"></div>
+
+              <!-- Contact Form -->
+              <h2>Contact Form</h2>
+              <div id="form" class="col-sm-12 contact-container">
+                <form id="contactForm">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  <label for="lastname">Last Name</label>
+                  <input type="text" id="lastname" name="lastname" placeholder="Your Last Name" required>
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your Company">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  <label for="phone">Phone</label>
+                  <input type="phone" id="phone" name="phone" placeholder="Your Phone">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send Message</button>
+                  <div id="status" class="message"></div>
+                </form>
+              </div>
+              <p class="mb-0"><a href="contact.html">Contact guide</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- GDPR Banner -->
+  <div id="gdpr-banner" class="gdpr-banner">
+    <p>
+      We use cookies to enhance your browsing experience and provide additional functionality.
+      By using this site, you consent to our use of cookies.
+      <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Learn more</a>.
+    </p>
+    <button id="accept-cookies" class="gdpr-button">Accept</button>
+  </div>
 
   <!-- Footer -->
   <footer class="text-muted py-5">
